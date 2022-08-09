@@ -9,217 +9,355 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
 }
 .baner img {
   margin-top: 10px;
-  margin-bottom: -20px;
-  margin-left: 10px;
+  margin-left: 90px;
 }
 .baner h1 {
-  margin-top: -30px;
-  margin-left: 100px;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 128px;
   color: #fff;
 }
-.baner .button1 {
-  margin-top: -50px;
-  margin-left: 800px;
-  margin-bottom: 20px;
+.baner li {
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: 10px;
 }
-.baner .button1 a {
+.baner li a {
+  white-space: nowrap;
   font-family: Helvetica, Arial, sans-serif;
-  color: #fff;
-  background-color: #22d13f;
+  color: #000000;
+  background-color: #22d188;
   padding: 15px 40px 15px 40px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 20px;
 }
-.baner .button1 a:hover {
-  background-color: #1ca132;
+.baner li a:hover {
+  background-color: #137457;
 }
-.baner .button2 {
-  margin-top: -42px;
-  margin-left: 980px;
-  margin-bottom: 20px;
-}
-.baner .button2 a {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #fff;
-  background-color: #227dd1;
-  padding: 16px 20px 16px 20px;
+.opis {
+  background-color: #cccccc;
   border-radius: 5px;
-  text-decoration: none;
-  font-size: 20px;
+  padding-right: 1410px;
 }
-.baner .button2 a:hover {
-  background-color: #154b7c;
-}
-.baner .button3 {
-  margin-top: -42px;
-  margin-left: 1155px;
-  margin-bottom: 10px;
-}
-.baner .button3 a {
+.opis h2 {
+  white-space: nowrap;
   font-family: Helvetica, Arial, sans-serif;
-  color: #fff;
-  background-color: #d18522;
-  padding: 16px 20px 16px 20px;
-  border-radius: 5px;
-  text-decoration: none;
+  font-size: 30px;
+  margin-left: 600px;
+  padding-top: 20px;
+  margin-top: 110px;
+  color: #e74c3c;
+}
+.opis h3 {
+  white-space: nowrap;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-}
-.baner .button3 a:hover {
-  background-color: #6e4612;
-}
-.baner .profile {
-  margin-top: -60px;
-  margin-left: 1345px;
-  margin-bottom: 30px;
+  margin-left: 500px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  color: #000000;
 }
 .main .wallpapers {
   border-radius: 5px;
-  margin-top: 100px;
-  margin-right: 80%;
-  padding-right: 1410px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #8dd486;
-}
-.main .wallpapers2 {
-  margin-left: 20px;
-  margin-right: 98%;
-  margin-top: -350px;
-  padding: 40px 2px 220px 2px;
-  background-color: #154211;
-  border-radius: 2px;
-}
-.main h2 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 30px;
-  margin-left: 50px;
-  margin-top: -230px;
-  color: #e74c3c;
-}
-.main h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  margin-left: 50px;
-  margin-top: 0px;
-  color: #fff;
-}
-.go {
-  margin-left: -50px;
-}
-.go .first {
-  background-color: #347fd4;
-  padding-top: 5px;
-  padding-right: 250px;
-  padding-bottom: 1px;
-  padding-left: 50px;
-  margin-top: -180px;
-  margin-left: 1080px;
-  margin-right: 80%;
-}
-.go .first p {
-  white-space: nowrap;
-  font-family: Helvetica, Arial, sans-serif;
   margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  font-size: 25px;
-  color: #fff;
+  margin-right: 1700px;
+  padding-right: 1410px;
+  padding-top: 60px;
+  padding-bottom: 850px;
+  background-color: #e9e499;
 }
-.go .second {
+.gos {
+  display: flex;
+  margin-left: -945px;
+  margin-top: -870px;
+}
+.gos .go .second {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   padding-right: 300px;
-  margin-left: 1080px;
+  margin-left: 1270px;
   margin-right: 80%;
-  background-color: #76b6e0;
+  background-color: #9dc9e7;
 }
-.go .second img {
+.gos .go .second img {
   border-radius: 8px;
-  border: 4px solid #113880;
-  margin-left: 30px;
+  margin-left: 20px;
 }
-.go .second a {
+.gos .go .second a {
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
-  margin-left: 120px;
-  top: 50px;
+  margin-left: 100px;
+  top: 60px;
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
   padding: 10px;
   background-color: #df5656;
 }
-.go .second a:hover {
+.gos .go .second a:hover {
   background-color: #973230;
 }
-.go .second p {
+.gos .go .second p {
   white-space: nowrap;
+  font-family: Helvetica, Arial, sans-serif;
   color: #000000;
   margin-top: -15px;
-  margin-left: 120px;
+  margin-left: 100px;
   font-size: 26px;
 }
-.go1 {
-  margin-left: -50px;
-  margin-top: 30px;
-}
-.go1 .first1 {
-  margin-top: -440px;
-  background-color: #347fd4;
-  padding-top: 5px;
-  padding-bottom: 1px;
-  padding-left: 50px;
-  padding-right: 270px;
-  margin-left: 730px;
-  margin-right: 80%;
-}
-.go1 .first1 p {
-  white-space: nowrap;
-  font-family: Helvetica, Arial, sans-serif;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
-  margin-left: 60px;
-  font-size: 25px;
-  color: #fff;
-}
-.go1 .second1 {
+.gos .go1 .second1 {
   padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 320px;
-  margin-left: 730px;
+  padding-bottom: 50px;
+  padding-right: 300px;
   margin-right: 90%;
-  background-color: #76b6e0;
+  background-color: #9dc9e7;
 }
-.go1 .second1 img {
+.gos .go1 .second1 img {
   border-radius: 8px;
-  border: 4px solid #113880;
-  margin-left: 30px;
+  margin-left: 20px;
 }
-.go1 .second1 a {
+.gos .go1 .second1 a {
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
-  margin-left: 120px;
-  top: 50px;
+  margin-left: 100px;
+  top: 60px;
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
   padding: 10px;
   background-color: #df5656;
 }
-.go1 .second1 a:hover {
+.gos .go1 .second1 a:hover {
   background-color: #973230;
 }
-.go1 .second1 p {
+.gos .go1 .second1 p {
+  font-family: Helvetica, Arial, sans-serif;
   white-space: nowrap;
   color: #000000;
   margin-top: -15px;
   margin-left: 70px;
   font-size: 26px;
+}
+.gos .go2 .second2 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 300px;
+  margin-right: 90%;
+  background-color: #9dc9e7;
+}
+.gos .go2 .second2 img {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.gos .go2 .second2 a {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  top: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #df5656;
+}
+.gos .go2 .second2 a:hover {
+  background-color: #973230;
+}
+.gos .go2 .second2 p {
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  color: #000000;
+  margin-top: -15px;
+  margin-left: 70px;
+  font-size: 26px;
+}
+.gos .go3 {
+  margin-right: 80%;
+}
+.gos .go3 .second3 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  background-color: #9dc9e7;
+}
+.gos .go3 .second3 img {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.gos .go3 .second3 a {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  top: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #df5656;
+}
+.gos .go3 .second3 a:hover {
+  background-color: #973230;
+}
+.gos .go3 .second3 p {
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  color: #000000;
+  margin-top: -15px;
+  margin-left: 70px;
+  font-size: 26px;
+}
+.gos li {
+  list-style-type: none;
+  margin-left: -250px;
+}
+.gos2 {
+  display: flex;
+  margin-left: -945px;
+  margin-top: 40px;
+}
+.gos2 .go .second {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 300px;
+  margin-left: 1270px;
+  margin-right: 80%;
+  background-color: #9dc9e7;
+}
+.gos2 .go .second img {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.gos2 .go .second a {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  top: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #df5656;
+}
+.gos2 .go .second a:hover {
+  background-color: #973230;
+}
+.gos2 .go .second p {
+  white-space: nowrap;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000000;
+  margin-top: -15px;
+  margin-left: 70px;
+  font-size: 26px;
+}
+.gos2 .go1 .second1 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 300px;
+  margin-right: 90%;
+  background-color: #9dc9e7;
+}
+.gos2 .go1 .second1 img {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.gos2 .go1 .second1 a {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  top: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #df5656;
+}
+.gos2 .go1 .second1 a:hover {
+  background-color: #973230;
+}
+.gos2 .go1 .second1 p {
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  color: #000000;
+  margin-top: -15px;
+  margin-left: 25px;
+  font-size: 26px;
+}
+.gos2 .go2 .second2 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 300px;
+  margin-right: 90%;
+  background-color: #9dc9e7;
+}
+.gos2 .go2 .second2 img {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.gos2 .go2 .second2 a {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  top: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #df5656;
+}
+.gos2 .go2 .second2 a:hover {
+  background-color: #973230;
+}
+.gos2 .go2 .second2 p {
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  color: #000000;
+  margin-top: -15px;
+  margin-left: 40px;
+  font-size: 26px;
+}
+.gos2 .go3 {
+  margin-right: 80%;
+}
+.gos2 .go3 .second3 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  background-color: #9dc9e7;
+}
+.gos2 .go3 .second3 img {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+.gos2 .go3 .second3 a {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 100px;
+  top: 60px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #df5656;
+}
+.gos2 .go3 .second3 a:hover {
+  background-color: #973230;
+}
+.gos2 .go3 .second3 p {
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+  color: #000000;
+  margin-top: -15px;
+  margin-left: 35px;
+  font-size: 26px;
+}
+.gos2 li {
+  list-style-type: none;
+  margin-left: -250px;
 }
 .work {
   margin: -10px;
@@ -227,34 +365,17 @@ html {
   margin-right: 100%;
   padding-right: 1330px;
   padding-top: 0px;
-  padding-bottom: -10px;
+  padding-bottom: 1px;
   padding-left: 100px;
-  background-color: #3cc45e;
+  background-color: #22d188;
 }
 .work p {
   position: relative;
   padding-top: 20px;
-  margin-left: 100px;
-  margin-bottom: -5px;
+  margin-left: 570px;
   color: #fff;
   font-size: 30px;
   font-family: Helvetica, Arial, sans-serif;
-}
-.work a {
-  white-space: nowrap;
-  position: relative;
-  font-family: Helvetica, Arial, sans-serif;
-  top: -25px;
-  margin-left: 950px;
-  color: #fff;
-  text-decoration: none;
-  background-color: #227dd1;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 20px;
-}
-.work a:hover {
-  background-color: #154b7c;
 }
 .tovar1 {
   border-radius: 50px;
@@ -562,7 +683,7 @@ html {
   margin-right: 100%;
   padding-right: 1330px;
   padding-top: 0px;
-  padding-bottom: -10px;
+  padding-bottom: 1px;
   padding-left: 100px;
   background-color: #0b50aa;
 }
@@ -570,8 +691,7 @@ html {
   white-space: nowrap;
   position: relative;
   padding-top: 20px;
-  margin-left: 100px;
-  margin-bottom: -5px;
+  margin-left: 540px;
   color: #fff;
   font-size: 30px;
   font-family: Helvetica, Arial, sans-serif;
@@ -672,7 +792,7 @@ html {
   margin-right: 100%;
   padding-right: 1330px;
   padding-top: 0px;
-  padding-bottom: -10px;
+  padding-bottom: 1px;
   padding-left: 100px;
   background-color: #aa720b;
 }
@@ -680,8 +800,7 @@ html {
   white-space: nowrap;
   position: relative;
   padding-top: 20px;
-  margin-left: 100px;
-  margin-bottom: -5px;
+  margin-left: 410px;
   color: #fff;
   font-size: 30px;
   font-family: Helvetica, Arial, sans-serif;
@@ -966,7 +1085,7 @@ html {
 }
 .tovar9 .botton4 {
   position: relative;
-  margin-top: -125px;
+  margin-top: -150px;
 }
 .tovar9 .botton4 a {
   font-size: 30px;
@@ -1040,7 +1159,7 @@ html {
 }
 .tovar10 .botton3 {
   position: relative;
-  margin-top: -105px;
+  margin-top: -130px;
 }
 .tovar10 .botton3 a {
   font-size: 30px;
