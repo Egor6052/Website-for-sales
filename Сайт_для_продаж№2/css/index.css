@@ -1,5 +1,5 @@
 html {
-  background-color: #f8f0c8;
+  background-color: #e0fae8;
   scroll-behavior: smooth;
 }
 .baner {
@@ -40,7 +40,7 @@ html {
   background-color: #137457;
 }
 .opis {
-  background-color: #cccccc;
+  background-color: #ebc4c4;
   border-radius: 5px;
   padding-right: 1410px;
 }
@@ -69,7 +69,7 @@ html {
   padding-right: 1410px;
   padding-top: 60px;
   padding-bottom: 850px;
-  background-color: #e9e499;
+  background-color: #e6ebad;
 }
 .gos {
   display: flex;
@@ -378,21 +378,25 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 .tovar1 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
+  margin-left: 75px;
+  padding-right: 1250px;
   padding-bottom: 120px;
+}
+.tovar1 img {
+  border-radius: 10px;
 }
 .tovar1 .im9 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar1 .im9 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar1 .opis9 h4 {
@@ -453,21 +457,25 @@ html {
   background-color: #17346b;
 }
 .tovar2 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 80px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar2 img {
+  border-radius: 10px;
 }
 .tovar2 .im10 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar2 .im10 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar2 .opis10 h4 {
@@ -528,21 +536,25 @@ html {
   background-color: #17346b;
 }
 .tovar3 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 40px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar3 img {
+  border-radius: 10px;
 }
 .tovar3 .im11 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar3 .im11 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar3 .opis11 h4 {
@@ -603,21 +615,25 @@ html {
   background-color: #17346b;
 }
 .tovar4 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 50px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar4 img {
+  border-radius: 10px;
 }
 .tovar4 .im8 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar4 .im8 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar4 .opis8 h4 {
@@ -685,7 +701,7 @@ html {
   padding-top: 0px;
   padding-bottom: 1px;
   padding-left: 100px;
-  background-color: #0b50aa;
+  background-color: #1dad71;
 }
 .questionable p {
   white-space: nowrap;
@@ -713,21 +729,25 @@ html {
   background-color: #154b7c;
 }
 .tovar5 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 70px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar5 img {
+  border-radius: 10px;
 }
 .tovar5 .im12 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar5 .im12 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar5 .opis12 h4 {
@@ -794,7 +814,7 @@ html {
   padding-top: 0px;
   padding-bottom: 1px;
   padding-left: 100px;
-  background-color: #aa720b;
+  background-color: #158d5b;
 }
 .spare p {
   white-space: nowrap;
@@ -822,21 +842,25 @@ html {
   background-color: #154b7c;
 }
 .tovar6 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 40px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar6 img {
+  border-radius: 10px;
 }
 .tovar6 .im13 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar6 .im13 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar6 .opis13 h4 {
@@ -896,21 +920,25 @@ html {
   background-color: #17346b;
 }
 .tovar7 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 50px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar7 img {
+  border-radius: 10px;
 }
 .tovar7 .im6 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar7 .im6 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar7 .opis6 h4 {
@@ -970,21 +998,25 @@ html {
   background-color: #17346b;
 }
 .tovar8 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 40px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar8 img {
+  border-radius: 10px;
 }
 .tovar8 .im5 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar8 .im5 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar8 .opis5 h4 {
@@ -1044,21 +1076,25 @@ html {
   background-color: #17346b;
 }
 .tovar9 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 40px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar9 img {
+  border-radius: 10px;
 }
 .tovar9 .im4 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar9 .im4 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar9 .opis4 h4 {
@@ -1118,21 +1154,25 @@ html {
   background-color: #17346b;
 }
 .tovar10 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 40px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar10 img {
+  border-radius: 10px;
 }
 .tovar10 .im3 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar10 .im3 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar10 .opis3 h4 {
@@ -1192,21 +1232,25 @@ html {
   background-color: #17346b;
 }
 .tovar11 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 40px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar11 img {
+  border-radius: 10px;
 }
 .tovar11 .im2 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar11 .im2 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar11 .opis2 h4 {
@@ -1266,21 +1310,25 @@ html {
   background-color: #17346b;
 }
 .tovar12 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 90px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar12 img {
+  border-radius: 10px;
 }
 .tovar12 .im1 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar12 .im1 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar12 .opis1 h4 {
@@ -1340,21 +1388,25 @@ html {
   background-color: #17346b;
 }
 .tovar13 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 60px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar13 img {
+  border-radius: 10px;
 }
 .tovar13 .im13 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar13 .im13 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar13 .opis13 h4 {
@@ -1414,21 +1466,25 @@ html {
   background-color: #17346b;
 }
 .tovar14 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 60px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar14 img {
+  border-radius: 10px;
 }
 .tovar14 .im14 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar14 .im14 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar14 .opis14 h4 {
@@ -1488,21 +1544,25 @@ html {
   background-color: #17346b;
 }
 .tovar15 {
-  border-radius: 50px;
-  background-color: #8cc5e6;
+  border-radius: 20px;
+  background-color: #78da9c;
   margin-top: 50px;
   margin-right: 80%;
-  padding-right: 1410px;
-  padding-bottom: 60px;
+  margin-left: 75px;
+  padding-right: 1250px;
+  padding-bottom: 120px;
+}
+.tovar15 img {
+  border-radius: 10px;
 }
 .tovar15 .im15 {
   padding-top: 30px;
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: -40px;
   display: flex;
 }
 .tovar15 .im15 li {
-  margin-left: 30px;
+  margin-left: 10px;
   display: flex;
 }
 .tovar15 .opis15 h4 {
