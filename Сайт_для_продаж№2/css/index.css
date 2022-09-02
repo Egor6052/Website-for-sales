@@ -366,14 +366,14 @@ html {
   margin-top: 80px;
   margin-right: 100%;
   padding-right: 1330px;
-  padding-top: 0px;
-  padding-bottom: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 100px;
   background-color: #22d188;
 }
 .work p {
   position: relative;
-  padding-top: 20px;
+  padding-top: 5px;
   margin-left: 570px;
   color: #fff;
   font-size: 30px;
@@ -621,15 +621,15 @@ html {
   margin-top: 80px;
   margin-right: 100%;
   padding-right: 1330px;
-  padding-top: 0px;
-  padding-bottom: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 100px;
   background-color: #1dad71;
 }
 .questionable p {
   white-space: nowrap;
   position: relative;
-  padding-top: 20px;
+  padding-top: 5px;
   margin-left: 540px;
   color: #fff;
   font-size: 30px;
@@ -656,15 +656,15 @@ html {
   margin-top: 80px;
   margin-right: 100%;
   padding-right: 1330px;
-  padding-top: 0px;
-  padding-bottom: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 100px;
   background-color: #158d5b;
 }
 .spare p {
   white-space: nowrap;
   position: relative;
-  padding-top: 20px;
+  padding-top: 5px;
   margin-left: 410px;
   color: #fff;
   font-size: 30px;
