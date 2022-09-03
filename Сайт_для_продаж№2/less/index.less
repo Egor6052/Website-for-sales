@@ -1,10 +1,11 @@
 // out: ../css/index.css
 
-@fon: #74c4b9;
-@green: #2ecc71;
+ @fon: #74c4b9;
+@buy: rgb(22, 177, 42);
 @red: #df5656;
 .border(@color) {
     border: 4px solid @color;
+    
 }
 html{
     background-color: #e1f7f7;
@@ -29,24 +30,87 @@ html{
             margin-right: 128px;
             color: #fff;
         }
-        li {
-            list-style-type: none;
-            margin-top: 30px;
-            margin-left: 10px;
-            a {
-                    white-space: nowrap;
-                    font-family: Helvetica, Arial, sans-serif;
-                    color: rgb(0, 0, 0);
-                    background-color:  #6ad8c9;
-                    padding: 15px 40px 15px 40px;
-                    border-radius: 5px;
-                    text-decoration: none;
-                    font-size: 20px;
-                    &:hover{
-                        background-color:  #42887f;
-                    }
+    //  test
+    .dropdown {
+        float: left;
+        overflow: hidden;
+        background-color: #22d188;
+        border-radius: 5px;
+        margin-left: 570px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        .dropbtn {
+            border: none;
+            outline: none;
+            padding-left: 65px;
+            padding-right: 45px;
+            padding-top: 15px;
+            margin-bottom: 20px;
+            background-color: inherit;
+            p {
+                margin-bottom: -15px;
+                margin-top: -40px;
+                font-family: inherit;
+                color: rgb(0, 0, 0);
+                font-size: 40px;
+            }
+            img {
+                margin-top: 5px;
+                margin-left: -150px;
             }
         }
+           &:hover {
+            background-color: rgb(22, 133, 81);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            // min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            input {
+                .border(#68a1cf);
+                font-size: 25px;
+                padding-left: 20px;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+            a {
+                white-space: nowrap;
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-size: 40px;
+                &:hover {
+                    background-color: #ddd;
+                  }
+              }
+              .add {
+                .border (#68a1cf);
+                border: 3px dashed rgb(105, 128, 255);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #d5e6f7;
+                p {
+                    padding-right: 1px;
+                    font-size: 20px;
+                    color: #6dacd6;
+                    margin-left: 30px;               
+                }                   
+            }
+        }
+        &:hover .dropdown-content {
+            display: block;
+          }
+
+    }
 }
 .opis {
     background-color: #e0bfbf;
@@ -157,7 +221,7 @@ html{
             white-space: nowrap;
             color: #000000;
             margin-top: -15px;
-            margin-left: 70px;
+            margin-left: 50px;
             font-size: 26px;
         }
     }
@@ -194,7 +258,7 @@ html{
             white-space: nowrap;
             color: #000000;
             margin-top: -15px;
-            margin-left: 70px;
+            margin-left: 75px;
             font-size: 26px;
         }
     }
@@ -401,41 +465,6 @@ li {
         margin-left: -250px;
     }
 }
-.work {
-    margin: -10px;
-    margin-top: 80px;
-    margin-right: 100%;
-    
-    padding-right: 1330px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 100px;
-    background-color: #22d188;
-        p {
-            position: relative;
-            padding-top: 5px;
-            margin-left: 570px;
-            color: #fff;
-            font-size: 30px;
-            font-family: Helvetica, Arial, sans-serif;
-        }
-        // a {
-        //     white-space: nowrap;
-        //     position: relative;
-        //     font-family: Helvetica, Arial, sans-serif;
-        //     top: -25px;
-        //     margin-left: 950px;
-        //     color: #fff;
-        //     text-decoration: none;
-        //     background-color: #227dd1;
-        //     border-radius: 5px;
-        //     padding: 10px;
-        //     font-size: 20px;
-        //     &:hover {
-        //         background-color: #154b7c;
-        //     }
-        // }
-}
 .tovar1 {
     border-radius: 20px;
     background-color: @fon;
@@ -445,7 +474,7 @@ li {
     margin-left: 75px;
 
     padding-right: 1250px;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
     img{
         border-radius: 10px;
     }
@@ -459,49 +488,23 @@ li {
             display: flex;
         }
     }
-    .opis9 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            margin-right: 950px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-
-            border-radius: 8px;
-            padding-left: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
     .botton9 {
         position: relative;
-        margin-top: -150px;
+        margin-top: 110px;
         a {
             font-size: 30px;
             padding: 10px 88px 10px 88px;
             margin-left: 850px;
-            background-color: rgb(22, 177, 42);
+            background-color: @buy;
             text-decoration: none;
             color: aliceblue;
             font-family: Helvetica, Arial, sans-serif;
             border-radius: 5px;
         &:hover {
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             background-color: rgb(23, 107, 34);
         }
-    }
+      }
     }
   .botton91 {
     margin-top: 40px;
@@ -516,35 +519,14 @@ li {
         font-family: Helvetica, Arial, sans-serif;
         border-radius: 5px;
     &:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         background-color: rgb(23, 52, 107);
         }
       }
     }
-}
-.tovar2 {
-    border-radius: 20px;
-    background-color:  @fon;
 
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im10{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis10 {
+    .opis9 {
+        margin-top: -220px;
         h4 {
             white-space: nowrap;
             font-size: 30px;
@@ -571,1290 +553,30 @@ li {
         }
 
     }
-    .botton10 {
-        position: relative;
-        margin-top: -175px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton101 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
 }
-// .tovar3 {
-//     border-radius: 20px;
-//     background-color:  @fon;
 
-//     margin-top: 50px;
-//     margin-right: 80%;
-//     margin-left: 75px;
-
-//     padding-right: 1250px;
-//     padding-bottom: 80px;
-//     img{
-//         border-radius: 10px;
-//     }
-//     .im11{
-//         padding-top: 30px;
-//         margin-top: 30px;
-//         margin-left: -40px;
-//         display: flex;
-//         li {
-//             margin-left: 10px;
-//             display: flex;
-//         }
-//     }
-//     .opis11 {
-//         h4 {
-//             white-space: nowrap;
-//             font-size: 30px;
-//             margin-top: 40px;
-//             margin-left: 90px;
-//             margin-right: 950px;
-//             color: @red;
-//         }
-//         p {
-//             .border(#dddddd);
-//             white-space: nowrap;
-//             background-color: #fff;
-//             font-size: 20px;
-//             margin-left: 80px;
-//             margin-top: -20px;
-//             margin-bottom: 20px;
-//             margin-right: 600px;
-//             border-radius: 8px;
-
-//             padding-top: 10px;
-//             padding-left: 10px;
-//             padding-bottom: 10px;
-//             padding-right: 720px;
-//         }
-
-//     }
-//     .botton11 {
-//         position: relative;
-//         margin-top: -130px;
-//         a {
-//             font-size: 30px;
-//             padding: 10px 88px 10px 88px;
-//             margin-left: 850px;
-//             background-color: rgb(22, 177, 42);
-//             text-decoration: none;
-//             color: aliceblue;
-//             font-family: Helvetica, Arial, sans-serif;
-//             border-radius: 5px;
-//         &:hover {
-//             background-color: rgb(23, 107, 34);
-//         }
-//     }
-//     }
-//   .botton111 {
-//     margin-top: 40px;
-//       a{
-//         white-space: nowrap;
-//         font-size: 30px;
-//         padding: 10px 60px 10px 60px;
-//         margin-left: 850px;
-//         background-color: rgb(0, 122, 153);
-//         text-decoration: none;
-//         color: aliceblue;
-//         font-family: Helvetica, Arial, sans-serif;
-//         border-radius: 5px;
-//     &:hover {
-//         background-color: rgb(23, 52, 107);
-//         }
-//       }
-//     }
-// }
-.tovar4 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im8{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis8 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton8 {
-        position: relative;
-        margin-top: -170px;
-        a {
-            white-space: nowrap;
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton81 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.questionable {
-        margin: -10px;
-        margin-top: 80px;
-        margin-right: 100%;
-        
-        padding-right: 1330px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 100px;
-        background-color: #1dad71;
-            p {
-                white-space: nowrap;
-                position: relative;
-                padding-top: 5px;
-                margin-left: 540px;
-                color: #fff;
-                font-size: 30px;
-                font-family: Helvetica, Arial, sans-serif;
-        }
-            a {
-                white-space: nowrap;
-                position: relative;
-                font-family: Helvetica, Arial, sans-serif;
-                top: -25px;
-                margin-left: 950px;
-                color: #fff;
-                text-decoration: none;
-                background-color: #227dd1;
-                border-radius: 5px;
-                padding: 10px;
-                font-size: 20px;
-                &:hover {
-                    background-color: #154b7c;
-                }
-            }
-}
-// .tovar5 {
-//     border-radius: 20px;
-//     background-color:  @fon;
-
-//     margin-top: 50px;
-//     margin-right: 80%;
-//     margin-left: 75px;
-
-//     padding-right: 1250px;
-//     padding-bottom: 120px;
-//     img{
-//         border-radius: 10px;
-//     }
-//     .im12{
-//         padding-top: 30px;
-//         margin-top: 30px;
-//         margin-left: -40px;
-//         display: flex;
-//         li {
-//             margin-left: 10px;
-//             display: flex;
-//         }
-//     }
-//     .opis12 {
-//         h4 {white-space: nowrap;
-//             font-size: 30px;
-//             margin-top: 40px;
-//             margin-left: 90px;
-//             color: @red;
-//         }
-//         p {
-//             .border(#dddddd);
-//             white-space: nowrap;
-//             background-color: #fff;
-//             font-size: 20px;
-//             margin-left: 80px;
-//             margin-top: -20px;
-//             margin-bottom: 20px;
-//             margin-right: 600px;
-//             border-radius: 8px;
-            
-//             padding-top: 10px;
-//             padding-left: 10px;
-//             padding-bottom: 10px;
-//             padding-right: 720px;
-//         }
-
-//     }
-//     .botton12 {
-//         position: relative;
-//         margin-top: -170px;
-//         a {
-//             font-size: 30px;
-//             padding: 10px 88px 10px 88px;
-//             margin-left: 850px;
-//             background-color: rgb(22, 177, 42);
-//             text-decoration: none;
-//             color: aliceblue;
-//             font-family: Helvetica, Arial, sans-serif;
-//             border-radius: 5px;
-//         &:hover {
-//             background-color: rgb(23, 107, 34);
-//         }
-//     }
-//     }
-//   .botton121 {
-//     margin-top: 40px;
-//       a{
-//         white-space: nowrap;
-//         font-size: 30px;
-//         padding: 10px 60px 10px 60px;
-//         margin-left: 850px;
-//         background-color: rgb(0, 122, 153);
-//         text-decoration: none;
-//         color: aliceblue;
-//         font-family: Helvetica, Arial, sans-serif;
-//         border-radius: 5px;
-//     &:hover {
-//         background-color: rgb(23, 52, 107);
-//         }
-//       }
-//     }
-// }
-.spare {
-    margin: -10px;
+.section {
+    // margin: -10px;
     margin-top: 80px;
     margin-right: 100%;
     
     padding-right: 1330px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     padding-left: 100px;
-    background-color: #158d5b;
+    background-color: #22d188;
         p {
             white-space: nowrap;
             position: relative;
-            padding-top: 5px;
-            margin-left: 410px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-left: 50px;
             color: #fff;
-            font-size: 30px;
+            font-size: 40px;
             font-family: Helvetica, Arial, sans-serif;
-    }
-       a {
-            white-space: nowrap;
-            position: relative;
-            font-family: Helvetica, Arial, sans-serif;
-            top: -25px;
-            margin-left: 950px;
-            color: #fff;
-            text-decoration: none;
-            background-color: #227dd1;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 20px;
-            &:hover {
-            background-color: #154b7c;
-            }
         }
 }
-.tovar6 {
-    border-radius: 20px;
-    background-color:  @fon;
 
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im13{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis13 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton13 {
-        position: relative;
-        margin-top: -125px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton131 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar7 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im6{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis6 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton6 {
-        position: relative;
-        margin-top: -145px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton61 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar8 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im5{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis5 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton5 {
-        position: relative;
-        margin-top: -125px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton51 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar9 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im4{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis4 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton4 {
-        position: relative;
-        margin-top: -150px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton41 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar10 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 100px;
-    img{
-        border-radius: 10px;
-    }
-    .im3{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis3 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton3 {
-        position: relative;
-        margin-top: -130px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton31 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar11 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 100px;
-    img{
-        border-radius: 10px;
-    }
-    .im2{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis2 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton2 {
-        position: relative;
-        margin-top: -170px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton21 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar12 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im1{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis1 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton1 {
-        position: relative;
-        margin-top: -190px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton11 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar13 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im13{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis13 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton13 {
-        position: relative;
-        margin-top: -170px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton131 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar14 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im14{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis14 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton14 {
-        position: relative;
-        margin-top: -170px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton141 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar15 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im15{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis15 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton15 {
-        position: relative;
-        margin-top: -170px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton151 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
-.tovar16 {
-    border-radius: 20px;
-    background-color:  @fon;
-
-    margin-top: 50px;
-    margin-right: 80%;
-    margin-left: 75px;
-
-    padding-right: 1250px;
-    padding-bottom: 120px;
-    img{
-        border-radius: 10px;
-    }
-    .im16{
-        padding-top: 30px;
-        margin-top: 30px;
-        margin-left: -40px;
-        display: flex;
-        li {
-            margin-left: 10px;
-            display: flex;
-        }
-    }
-    .opis16 {
-        h4 {
-            white-space: nowrap;
-            font-size: 30px;
-            margin-top: 40px;
-            margin-left: 90px;
-            color: @red;
-        }
-        p {
-            .border(#dddddd);
-            white-space: nowrap;
-            background-color: #fff;
-            font-size: 20px;
-            margin-left: 80px;
-            margin-top: -20px;
-            margin-bottom: 20px;
-            margin-right: 600px;
-            border-radius: 8px;
-            
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 720px;
-        }
-
-    }
-    .botton16 {
-        position: relative;
-        margin-top: -220px;
-        a {
-            font-size: 30px;
-            padding: 10px 88px 10px 88px;
-            margin-left: 850px;
-            background-color: rgb(22, 177, 42);
-            text-decoration: none;
-            color: aliceblue;
-            font-family: Helvetica, Arial, sans-serif;
-            border-radius: 5px;
-        &:hover {
-            background-color: rgb(23, 107, 34);
-        }
-    }
-    }
-  .botton161 {
-    margin-top: 40px;
-      a{
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 10px 60px 10px 60px;
-        margin-left: 850px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
-    &:hover {
-        background-color: rgb(23, 52, 107);
-        }
-      }
-    }
-}
 .data {
     margin: -10px;
     margin-top: 50px;
@@ -1881,6 +603,7 @@ li {
     margin-top: -25px;
     margin-left: -10px;
     margin-right: 80%;
+    padding-bottom: 50px;
     
     padding-right: 1430px;
     background-color:  #7fe0d3;
@@ -1900,26 +623,68 @@ li {
             font-size: 25px;
             color: #000000;
         }
+        a {
+            position: absolute;
+            white-space: nowrap;
+            margin-top: -50px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+    
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #55aee9;
+            color: rgb(255, 255, 255);
+            border-radius: 6px;
+            font-size: 20px;
+            text-decoration: none;
+            &:hover {
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                background-color: #426a85;
+            }
+            img {
+                margin-right: 20px;
+                margin-top: 5px;
+            }
+        }
+        .gmail {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #ec7c60;
+            color: rgb(0, 0, 0);
+            border-radius: 6px;
+            font-size: 20px;
+            text-decoration: none;
+
+            margin-left: 430px;
+            &:hover {
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                background-color: #974f3c;
+            }
+        }
     }
 }
-.bottonDown {
-    position: relative;
-    margin-top: -540px;
-    margin-bottom: 0px;
-    a {
-        white-space: nowrap;
-        font-size: 30px;
-        padding: 30px 50px 30px 50px;
-        margin-left: 1070px;
-        background-color: rgb(0, 122, 153);
-        text-decoration: none;
-        color: aliceblue;
-        font-family: Helvetica, Arial, sans-serif;
-        border-radius: 5px;
+// .bottonDown {
+//     position: relative;
+//     margin-top: -300px;
+//     margin-bottom: 0px;
+//     a {
+//         white-space: nowrap;
+//         font-size: 30px;
+//         padding: 30px 50px 30px 50px;
+//         margin-left: 1070px;
+//         background-color: rgb(0, 122, 153);
+//         text-decoration: none;
+//         color: aliceblue;
+//         font-family: Helvetica, Arial, sans-serif;
+//         border-radius: 5px;
     
-    &:hover {
-        background-color: rgb(37, 65, 117);
-    }
-}
+//     &:hover {
+//         background-color: rgb(37, 65, 117);
+//     }
+// }
     
-}
+// }
